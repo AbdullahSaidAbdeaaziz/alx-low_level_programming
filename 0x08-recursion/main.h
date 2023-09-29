@@ -3,7 +3,7 @@
 #ifndef MAIN.H
 #define MAIN.H
 int _puthchar(char c);
-void _putrecursion(char* s);
+void _puts_recursion(char* s);
 void _print_rev_recursion(char* s);
 int _strlen_recursion(char* s);
 int factorial(int n);
