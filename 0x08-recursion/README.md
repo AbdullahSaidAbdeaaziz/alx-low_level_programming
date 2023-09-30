@@ -89,7 +89,7 @@ julien@ubuntu:~/0x08. Recursion$
 
 ---
 
-4. Write a function that returns the factorial of a given number.
+4. Write a function that `returns the factorial of a given number`.
 
 - Prototype: `int factorial(int n);`
 If n is lower than 0, the function should return -1 to indicate an error
@@ -131,7 +131,7 @@ julien@ubuntu:~/0x08. Recursion$
 
 ---
 
-5. Write a function that returns the value of x raised to the power of y.
+5. Write a function that `returns the value of x raised to the power of y`.
 
 - Prototype: `int _pow_recursion(int x, int y);`
 If `y is lower than 0, the function should return -1`
@@ -179,7 +179,7 @@ julien@ubuntu:~/0x08. Recursion$
 
 ---
 
-6. Write a function that returns the natural square root of a number.
+6. Write a function that `returns the natural square root of a number`.
 
 - Prototype: `int _sqrt_recursion(int n);`
 If `n does not have a natural square root, the function should return -1`
@@ -224,3 +224,151 @@ julien@ubuntu:~/0x08. Recursion$ ./5-sqrt
 -1
 julien@ubuntu:~/0x08. Recursion$
 ```
+
+7. Write a function that `returns 1 if a string is a palindrome and 0 if not`.
+
+- Prototype: `int is_palindrome(char *s);`
+An empty string is a palindrome
+
+```shell
+julien@ubuntu:~/0x08. Recursion$ cat 100-main.c
+# include "main.h"
+# include <stdio.h>
+
+/**
+
+- main - check the code
+*
+- Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = is_palindrome("level");
+    printf("%d\n", r);
+    r = is_palindrome("redder");
+    printf("%d\n", r);
+    r = is_palindrome("test");
+    printf("%d\n", r);
+    r = is_palindrome("step on no pets");
+    printf("%d\n", r);
+    return (0);
+}
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-is_palindrome.c -o 100-palindrome
+julien@ubuntu:~/0x08. Recursion$ ./100-palindrome
+1
+1
+0
+1
+julien@ubuntu:~/0x08. Recursion$
+```
+
+---
+
+8. Write a function that `returns 1 if a string is a palindrome and 0 if not`.
+
+- Prototype: `int is_palindrome(char *s);`
+An empty string is a palindrome
+
+```shell
+julien@ubuntu:~/0x08. Recursion$ cat 100-main.c
+# include "main.h"
+# include <stdio.h>
+
+/**
+
+- main - check the code
+*
+- Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = is_palindrome("level");
+    printf("%d\n", r);
+    r = is_palindrome("redder");
+    printf("%d\n", r);
+    r = is_palindrome("test");
+    printf("%d\n", r);
+    r = is_palindrome("step on no pets");
+    printf("%d\n", r);
+    return (0);
+}
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-is_palindrome.c -o 100-palindrome
+julien@ubuntu:~/0x08. Recursion$ ./100-palindrome
+1
+1
+0
+1
+julien@ubuntu:~/0x08. Recursion$
+```
+
+---
+
+9. Write a function that compares `two strings and returns 1 if the strings can be considered identical, otherwise return 0`.
+
+- Prototype: `int wildcmp(char *s1, char*s2);`
+s2 can contain the special character *.
+The special char* can replace any string (including an empty string)
+
+```shell
+julien@ubuntu:~/0x08. Recursion$ cat 101-main.c
+# include "main.h"
+# include <stdio.h>
+
+/**
+
+- main - check the code
+*
+- Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = wildcmp("main.c", "*.c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "m*a*i*n*.*c*");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "main.c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "m*c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "ma********************************c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "*");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "***");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "m.*c");
+    printf("%d\n", r);
+    r = wildcmp("main.c", "**.*c");
+    printf("%d\n", r);
+    r = wildcmp("main-main.c", "ma*in.c");
+    printf("%d\n", r);
+    r = wildcmp("main", "main*d");
+    printf("%d\n", r);
+    r = wildcmp("abc", "*b");
+    printf("%d\n", r);
+    return (0);
+}
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-wildcmp.c -o 101-wildcmp
+julien@ubuntu:~/0x08. Recursion$ ./101-wildcmp
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+0
+julien@ubuntu:~/0x08. Recursion$
+```
+
+## Great Work🔦
