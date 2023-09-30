@@ -19,7 +19,7 @@ return (1);
 
 if (*(s + start) == *(s + end))
 {
-is_palindrome_helper(s, start + 1, end - 1);
+return is_palindrome_helper(s, start + 1, end - 1);
 }
 else
 {
