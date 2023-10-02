@@ -1,20 +1,9 @@
 #include <stdio.h>
-
-/*
-2-strlen.c
-2-strncpy.c
-3-islower.c
-3-puts.o
-3-strcmp.c
-3-strspn.c
-4-isalpha.c
-4-strpbrk.c
-5-strstr.c
-6-abs.c
-9-strcpy.c
-*/
 #ifndef MAIN_H
 #define MAIN_H
+
+/*copy list from task*/
+
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
@@ -35,4 +24,5 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
+
 #endif
