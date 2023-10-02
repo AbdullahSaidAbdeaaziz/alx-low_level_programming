@@ -1,6 +1,7 @@
 # My Files
 .vscode/
 index.[c|exe]
+push.sh
 # Prerequisites
 *.d
 
@@ -21,7 +22,7 @@ index.[c|exe]
 
 # Libraries
 *.lib
-*.a
+# *.a
 *.la
 *.lo
 
@@ -32,7 +33,7 @@ index.[c|exe]
 *.dylib
 
 # Executables
-*.exe
+# *.exe
 *.out
 *.app
 *.i*86
