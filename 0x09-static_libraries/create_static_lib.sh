@@ -1,3 +1,2 @@
-#!/bin/sh
-gcc -c *.c
-ar -rc liball.a *.o
+#!~/bin/sh
+gcc -c *.c && ar -rc liball.a *.o
