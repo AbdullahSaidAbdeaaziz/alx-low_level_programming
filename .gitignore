@@ -2,6 +2,7 @@
 .vscode/
 index.[c|exe]
 push.sh
+test.c
 # Prerequisites
 *.d
 

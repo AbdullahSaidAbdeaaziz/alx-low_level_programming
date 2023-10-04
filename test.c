@@ -1,25 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
-char *create_array(unsigned int size, char c)
+#include <string.h>
+char *__strdup(char *str)
 {
-    char *arr = (char *)malloc(sizeof(char) * size);
-    if (size <= 0 || arr == NULL)
+    char *new_str = (char *)malloc(sizeof(char*));
+    size_t size = strlen(str);
+    size_t i = 0;
+
+    if (str == NULL)
     {
         return (NULL);
     }
 
 
-    while (size--)
+    while (i < size)
     {
-        *(arr + size) = c;
+        new_str[i] = str[i];
+        i++;
     }
-    return arr;
+
+    return (new_str);
 }
 
 int main(void)
 {
-    char *arr = create_array(2, 'A');
+    char *s;
 
-    printf("%c", arr[0]);
+    s = __strdup("ALX SE");
+    if (s == NULL)
+    {
+        printf("failed to allocate memory\n");
+        return (1);
+    }
+    printf("%s\n", s);
+    free(s);
     return (1);
 }
