@@ -24,10 +24,6 @@ while (i < size)
 new_str[i] = str[i];
 i++;
 }
-if (size > 0)
-{
-new_str[size] = '\0';
-}
 
 return (new_str);
 }
