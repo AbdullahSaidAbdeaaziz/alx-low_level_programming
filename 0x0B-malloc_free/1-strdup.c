@@ -14,7 +14,7 @@ size_t i = 0;
 size_t size = strlen(str);
 char *new_str = (char *)malloc(size + 1);
 
-if (str == NULL)
+if (str == NULL || new_str == NULL)
 {
 return (NULL);
 }
@@ -27,5 +27,4 @@ i++;
 new_str[size] = '\0';
 
 return (new_str);
-
 }
