@@ -19,7 +19,7 @@ return (NULL);
 }
 size1 = strlen(s1);
 size2 = strlen(s2);
-total_size = size1 + size2;
+total_size = size1 < 0 ? 0 : size1 + size2 < 0 ? 0 : size1;
 all_str = (char *)malloc(total_size *sizeof(char) + 1);
 
 if (all_str == NULL)
