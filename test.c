@@ -3,14 +3,16 @@
 #include <string.h>
 char *__strdup(char *str)
 {
-    char *new_str = (char *)malloc(sizeof(char*));
-    size_t size = strlen(str);
-    size_t i = 0;
-
+    char* new_str;
+    size_t i, size;
     if (str == NULL)
     {
         return (NULL);
     }
+    new_str = (char *)malloc(sizeof(char*));
+    size = strlen(str);
+    i = 0;
+
 
 
     while (i < size)
@@ -26,7 +28,7 @@ int main(void)
 {
     char *s;
 
-    s = __strdup("ALX SE");
+    s = __strdup(NULL);
     if (s == NULL)
     {
         printf("failed to allocate memory\n");
