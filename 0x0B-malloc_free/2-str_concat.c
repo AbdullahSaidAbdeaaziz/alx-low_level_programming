@@ -11,11 +11,12 @@
 
 char *str_concat(char *s1, char *s2)
 {
-char *all_str;
+char *all_str, *empty;
 size_t total_size, i, size1, size2;
 if (s1 == NULL && s2 == NULL)
 {
-char *empty = "";
+empty = (char *)malloc(1);
+*empty = "";
 return (empty);
 }
 if (s1 == NULL)
