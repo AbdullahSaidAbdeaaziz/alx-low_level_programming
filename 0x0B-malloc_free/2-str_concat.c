@@ -40,5 +40,6 @@ all_str[i] = s2[i - size1];
 }
 i++;
 }
+all_str[i] = '\0';
 return (all_str);
 }
