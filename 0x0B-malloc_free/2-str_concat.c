@@ -17,9 +17,15 @@ if (s1 == NULL && s2 == NULL)
 {
 return (NULL);
 }
+if (s1 == NULL)
+size1 = 0;
+else
 size1 = strlen(s1);
+if (s2 == NULL)
+size2 = 0;
+else
 size2 = strlen(s2);
-total_size = size1 < 0 ? 0 : size1 + size2 < 0 ? 0 : size1;
+total_size = size1 + size2;
 all_str = (char *)malloc(total_size *sizeof(char) + 1);
 
 if (all_str == NULL)
