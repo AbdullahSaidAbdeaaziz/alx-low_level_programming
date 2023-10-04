@@ -16,7 +16,7 @@ size_t total_size, i, size1, size2;
 if (s1 == NULL && s2 == NULL)
 {
 empty = (char *)malloc(1);
-*empty = (char *)"";
+*empty = '\0';
 return (empty);
 }
 if (s1 == NULL)
