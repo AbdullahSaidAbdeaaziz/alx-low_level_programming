@@ -22,7 +22,7 @@ times = n;
 sum = 0;
 while (times--)
 {
-int cur_num = va_arg(nums, size_t);
+int cur_num = va_arg(nums, int);
 sum += cur_num;
 }
 va_end(nums);
