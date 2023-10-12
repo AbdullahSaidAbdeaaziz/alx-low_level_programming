@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#ifndef VARIADIC_FUNCTION_H
-#define VARIADIC_FUNCTION_H
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
 
 int _putchar(char c);
 
