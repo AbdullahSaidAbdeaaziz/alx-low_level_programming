@@ -12,7 +12,6 @@ int sum_them_all(const unsigned int n, ...)
 {
 int sum, times;
 va_list nums;
-va_start(nums, n);
 if (n == 0)
 {
 return (0);
@@ -20,10 +19,10 @@ return (0);
 
 times = n;
 sum = 0;
+va_start(nums, n);
 while (times--)
 {
-int cur_num = va_arg(nums, int);
-sum += cur_num;
+sum += va_arg(nums, int);
 }
 va_end(nums);
 
