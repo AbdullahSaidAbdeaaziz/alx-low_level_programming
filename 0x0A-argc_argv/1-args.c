@@ -21,6 +21,6 @@ if (argv[i] != NULL)
 no_options += 1;
 }
 }
-printf("%d", no_options);
+printf("%d\n", no_options);
 return (1);
 }
