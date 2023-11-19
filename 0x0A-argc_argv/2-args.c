@@ -16,7 +16,11 @@ int i;
 i = 0;
 while(argv[i] != NULL)
 {
-printf("%s\n", argv[i]);
+printf("%s", argv[i]);
+if (i != argc - 1)
+{
+printf("\n");
+}
 i += 1;
 }
 return (1);
