@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * main - print list of options
@@ -11,12 +11,13 @@
 
 int main(int argc, char *argv[])
 {
-    int i;
-    (void)argc;
-    i = 0;
-    while(argv[i] != NULL)
-    {
-    printf("%d\n", void());
-    }
-    return (1);
+int i;
+(void)argc;
+i = 0;
+while(argv[i] != NULL)
+{
+printf("%s\n", argv[i]);
+i += 1
+}
+return (1);
 }
