@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - print length of options
  * @argc: length of options
@@ -9,17 +8,8 @@
  * Return: 1 success
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-int i, no_options = 0;
-(void)argc;
-for (i = 1; i < argc; i++)
-{
-if (argv[i] != NULL)
-{
-no_options += 1;
-}
-}
-printf("%d\n", no_options);
+printf("%d\n", argc - 1);
 return (1);
 }

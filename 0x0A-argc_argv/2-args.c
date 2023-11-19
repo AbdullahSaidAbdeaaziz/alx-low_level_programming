@@ -11,17 +11,11 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-(void)argc;
-i = 0;
-while(argv[i] != NULL)
+int i = 0;
+while (argc--)
 {
-printf("%s", argv[i]);
-if (i != argc - 1)
-{
-printf("\n");
-}
-i += 1;
+printf("%s\n", argv[i]);
+i++;
 }
 return (1);
 }
