@@ -17,7 +17,7 @@ i = 0;
 while(argv[i] != NULL)
 {
 printf("%s\n", argv[i]);
-i += 1
+i += 1;
 }
 return (1);
 }
