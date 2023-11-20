@@ -16,7 +16,7 @@ char *c;
 for (i = 1; i < argc; i++)
 {
 c = argv[i];
-while(*c)
+while (*c)
 {
 if (*c > '9' || *c < '0')
 {
