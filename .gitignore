@@ -3,7 +3,8 @@
 index.[c|exe]
 push.sh
 test.c
-0-main.c
+*-main.c
+a
 # Prerequisites
 *.d
 
@@ -56,3 +57,4 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
