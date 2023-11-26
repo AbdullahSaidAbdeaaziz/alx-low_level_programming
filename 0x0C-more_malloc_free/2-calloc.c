@@ -38,7 +38,7 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-array = malloc(nmemb * sizeof(int));
-_memset(array, 0, sizeof(int) * nmemb);
+array = malloc(nmemb * size);
+_memset(array, 0, size * nmemb);
 return (array);
 }
