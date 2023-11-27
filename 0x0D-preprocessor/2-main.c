@@ -3,10 +3,10 @@
 /**
  * main - print file name
  *
- * Return: 1
+ * Return: 0
 */
 int main(void)
 {
 printf("%s\n", __FILE__);
-return (1);
+return (0);
 }
