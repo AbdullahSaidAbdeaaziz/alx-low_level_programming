@@ -18,5 +18,16 @@ if (!d->name)
 {
 printf("Name: nil\n");
 }
+if (!d->owner)
+{
+printf("Owner: nil\n");
+}
+if (d->age <= 0)
+{
+printf("Age: nil\n");
+}
+if (d->owner && d->age && d->age > 0)
+{
 printf("Name: %s\nAge: %f\nOwner: %s", d->name, d->age, d->owner);
+}
 }
