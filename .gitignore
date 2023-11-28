@@ -3,7 +3,7 @@
 index.[c|exe]
 push.sh
 test.c
-*-main.c
+main.c
 a
 # Prerequisites
 *.d

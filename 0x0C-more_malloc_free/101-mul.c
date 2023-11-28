@@ -41,7 +41,7 @@ _putchar('0' + resp);
  * Return: 0
 */
 
-int main(int argc, const char *argv)
+int main(int argc, char const *argv)
 {
 int n1, n2;
 if (argc - 1 < 2)
