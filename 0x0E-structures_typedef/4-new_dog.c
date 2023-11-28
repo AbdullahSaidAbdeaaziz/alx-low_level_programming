@@ -24,17 +24,18 @@ if (!ndog)
 return (NULL);
 }
 ndog->name = malloc(strlen(name) + 1);
-if (!ndog->name){
-    free(ndog);
-    return (NULL);
+if (!ndog->name)
+{
+free(ndog);
+return (NULL);
 }
 ndog->name = strcpy(ndog->name, name);
 ndog->age = age;
 ndog->owner = malloc(strlen(owner) + 1);
 if (!ndog->owner)
 {
-    free(ndog);
-    return (NULL);
+free(ndog);
+return (NULL);
 }
 ndog->owner = strcpy(ndog->owner, owner);
 return (ndog);
