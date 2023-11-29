@@ -6,11 +6,14 @@
  * @array: array of elements
  * @size: size of array
  * @action: function with parameter int
+ *
+ * Return: None
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
+
 	if (!array || !action)
 	{
 		return;
@@ -19,4 +22,5 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	{
 		action(array[i]);
 	}
+
 }
