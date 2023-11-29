@@ -207,6 +207,8 @@ julien@ubuntu:~/0x0e. Function pointers$ ./c
 julien@ubuntu:~/0x0e. Function pointers$
 ```
 
+---
+
 5. Write a program that performs simple operations.
 
 You are allowed to use the standard library
