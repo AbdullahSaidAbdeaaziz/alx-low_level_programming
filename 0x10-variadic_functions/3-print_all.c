@@ -54,11 +54,6 @@ void print_all(const char *const format, ...)
 	int i = 0, is_exist, size = strlen(format);
 	va_list types;
 
-	if (!format)
-	{
-		printf("(nil)\n");
-		return;
-	}
 	va_start(types, format);
 	while (format && format[i])
 	{
