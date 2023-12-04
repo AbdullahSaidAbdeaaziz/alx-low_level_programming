@@ -55,7 +55,7 @@ void print_all(const char *const format, ...)
 	va_list types;
 
 	va_start(types, format);
-	while (format[i] && format)
+	while (format && format[i])
 	{
 		is_exist = check_format(format[i], types);
 		if (is_exist && i != size - 1)
