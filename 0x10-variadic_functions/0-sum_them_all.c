@@ -12,19 +12,19 @@ int sum_them_all(const unsigned int n, ...)
 {
 int sum, times;
 va_list nums;
-if (n <= 0) 
-{
-return (0);
-}
+	if (n <= 0)
+	{
+		return (0);
+	}
 
-times = n;
-sum = 0;
-va_start(nums, n);
-while (times--)
-{
-sum += va_arg(nums, int);
-}
-va_end(nums);
+	times = n;
+	sum = 0;
+	va_start(nums, n);
+	while (times--)
+	{
+		sum += va_arg(nums, int);
+	}
+	va_end(nums);
 
-return (sum);
+	return (sum);
 }
