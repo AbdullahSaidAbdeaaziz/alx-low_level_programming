@@ -1,6 +1,8 @@
 # alx-low_level_programming
 ALX internship program
 
+---
+
 ## Requirements
 ### General
 - Allowed editors: `vi, vim, emacs`
