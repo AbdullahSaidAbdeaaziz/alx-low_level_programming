@@ -9,15 +9,18 @@
 
 int pop_listint(listint_t **head)
 {
+	int removed_element = 0;
 	listint_t *cur;
 
 	if (!*head)
 	{
-		return (0);
+		return (removed_element);
 	}
 
 	cur = *head;
+	removed_element = cur->n;
 	*head = (*head)->next;
+	free(cur);
 
-	return (cur->n);
+	return (removed_element);
 }
