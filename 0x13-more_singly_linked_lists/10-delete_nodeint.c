@@ -1,7 +1,11 @@
 #include "lists.h"
 
 /**
- * 
+ * delete_nodeint_at_index - delete node at
+ * position
+ * @head: first node in list if exist
+ * @index: index of deleted node
+ * Return: 1 on success and -1 on fail of delete
 */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -22,10 +26,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	while (cur != NULL)
 	{
-		if (i == index - 1)
+		if (i == index)
 		{
-			printf("[pre] %d\n", pre->n);
-			printf("[post] %d\n", cur->n);
 			pre->next = cur->next;
 			free(cur);
 			return (1);
