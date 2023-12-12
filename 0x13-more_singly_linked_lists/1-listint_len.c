@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - number of elements in linked list
+ * listint_len - number of elements in linked list
  * @h: firt node (head) in linked list
  * Return: number of element s in linked list
  */
