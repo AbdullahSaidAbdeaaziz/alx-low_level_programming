@@ -13,7 +13,7 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new_node, *cur;
-	size_t counter = 0, size = size_listint(head);
+	size_t counter = 0;
 
 	if (!new_node || !*head)
 	{
