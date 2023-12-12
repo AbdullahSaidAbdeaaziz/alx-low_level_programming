@@ -1,4 +1,4 @@
-#include "lists.h" // Include necessary header file
+#include "lists.h"
 
 /**
  * insert_nodeint_at_index - Inserts a new node at a given position
