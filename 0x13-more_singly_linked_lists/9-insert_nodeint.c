@@ -31,9 +31,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (new_node);
 	}
 
-	while (cur != NULL && counter < idx)
+	while (cur != NULL)
 	{
-		if (idx - 1 == counter)
+		if (idx == counter)
 		{
 			new_node->next = cur->next;
 			cur->next = new_node;
